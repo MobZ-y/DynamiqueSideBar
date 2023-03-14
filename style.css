@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(68, 68, 68);
+}
+li {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: red;
+  width: 0%;
+}
+.sidebar-element {
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-in-out, width 1s ease-in-out;
+}
+
+.sidebar-element.animate {
+  opacity: 1;
+  width: 500px;
+}
+
+.sidebar-element.animate:nth-child(2) {
+  transition-delay: 0.1s;
+  transform: translateY(-20px);
+}
+
+.sidebar-element.animate:nth-child(3) {
+  transition-delay: 0.2s;
+  transform: translateY(-40px);
+}
+
+.sidebar-element.animate:nth-child(4) {
+  transition-delay: 0.3s;
+  transform: translateY(-60px);
+}
